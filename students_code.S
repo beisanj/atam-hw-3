@@ -85,27 +85,22 @@ inner_prod:
 
 	loop_HW2:
 
-
 		movq -8(%rbp), %rdi
-		movzx -16(%rbp), %esi
+		movl -16(%rbp), %esi
 		movl -12(%rbp), %edx
 		movl %ebx, %ecx
 		call get_element_from_matrix
 
 		#store the result in a variable 
-
 		movl %eax, -44(%rbp) 
-
 
 		movq -24(%rbp), %rdi
 		movl -32(%rbp), %esi
-		movl -28(%rbp), %edx
-		movl %ebx, %ecx
+		movl %ebx, %edx 
+		movl -28(%rbp), %ecx
 		call get_element_from_matrix
 
-
 		movl -44(%rbp), %edx
-
 
 		mul %edx
 		d5_HW2:
