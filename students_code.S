@@ -181,8 +181,8 @@ matrix_multiplication:
 
 			movq -36(%rbp), %rdi   
 			movl 16(%rbp), %esi
-			movl %ebx, %edx
-			movl %r12d, %ecx
+			movl %r12d, %edx
+			movl %ebx, %ecx
 			movl %eax, %r8d
 			call set_element_in_matrix
 
